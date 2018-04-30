@@ -80,7 +80,7 @@
     "path-to-regexp": "1.5.3",
     "pluralize": "1.2.1",
     "prompt": "0.2.14",
-    "rc": "1.0.1",
+    "rc": "1.2.7",
     "reportback": "~0.1.9",
     "rttc": "9.3.3",
     "sails-build-dictionary": "~0.10.1",
