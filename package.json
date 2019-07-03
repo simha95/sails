@@ -21,8 +21,9 @@
   },
   "scripts": {
     "test": "mocha -b",
-    "prepublish": "npm prune",
-    "preinstall": "node ./lib/preinstall_npmcheck.js"
+    "prepublish": "npm run snyk-protect; npm prune",
+    "preinstall": "node ./lib/preinstall_npmcheck.js",
+    "snyk-protect": "snyk protect"
   },
   "directories": {
     "lib": "lib"
@@ -96,7 +97,8 @@
     "skipper": "~0.6.0",
     "uid-safe": "1.1.0",
     "walk": "2.3.9",
-    "waterline": "~0.11.0"
+    "waterline": "~0.11.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "benchmark": "1.0.0",
@@ -126,5 +128,6 @@
   "engines": {
     "node": ">= 0.10.0",
     "npm": ">= 1.4.0"
-  }
+  },
+  "snyk": true
 }
